@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Number from './hooks/Number'
+import HideShow from './hooks/HideShow'
+import FormHandel from './hooks/FormHandel'
+import LoginForm from './hooks/LoginForm'
+import SwitchBetween from './hooks/SwitchBetween'
+import LikeButton from './hooks/LikeButton'
+import TodoList from './hooks/TodoList'
+import CharacterCount from './hooks/CharacterCount'
+import ShopingCart from './hooks/ShopingCart'
+import FetchData from './hooks/FetchData'
+import WindowWidth from './hooks/WindowWidth'
+import SwitcherLocalStorage from './hooks/SwitcherLocalStorage'
+import PollingData from './hooks/PollingData'
+import TimerComponent from './hooks/TimerComponent'
+import CreateTimer from './hooks/CreateTimer'
+import CountDown from './hooks/CountDown'
+import OnlineStatus from './hooks/OnlineStatus'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Number />
+      <FormHandel /> 
+      <HideShow />
+      <LoginForm />
+      <SwitchBetween />
+      <LikeButton /> 
+      <TodoList />
+      <CharacterCount /> 
+      <TimerComponent />
+      <FetchData />
+      <WindowWidth />
+      <ShopingCart /> 
+      <SwitcherLocalStorage />
+      <OnlineStatus />
+      <CreateTimer />
+      <PollingData />
+      <CountDown />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
